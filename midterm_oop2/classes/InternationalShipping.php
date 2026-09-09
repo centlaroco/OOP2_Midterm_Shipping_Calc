@@ -44,7 +44,6 @@ class InternationalShipping extends Shipping
     public function generateTrackingSummary(): string
     {
         $taxPercent = $this->customsTaxRate * 100;
-        return parent::generateTrackingSummary() 
-            . " | Country: {$this->destinationCountry} | Customs Duty: {$taxPercent}%";
+        return parent::generateTrackingSummary() . " | Country: {$this->destinationCountry} | Customs Duty: {$taxPercent}%";
     }
 }
