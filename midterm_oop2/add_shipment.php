@@ -18,11 +18,10 @@ $selType = old('shipping_type');
     <h2 class="text-xl font-bold mb-4">Add a New Shipment</h2>
 
     <?php if (!empty($errors)): ?>
-        <div class="bg-red-50 text-red-700 p-4 mb-4 rounded border border-red-200">
-            <strong>Validation Error:</strong>
-            <ul class="list-disc pl-5 mt-1">
+        <div class="bg-red-50 flex text-red-700 p-4 mb-4 rounded border border-red-200 items-center">
+            <strong>Error: </strong>
                 <?php foreach ($errors as $error): ?>
-                    <li><?php echo htmlspecialchars($error); ?></li>
+                    <?php echo htmlspecialchars($error); ?>
                 <?php endforeach; ?>
             </ul>
         </div>
