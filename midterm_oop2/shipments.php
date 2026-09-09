@@ -14,13 +14,6 @@ function typeClasses($class) {
 ?>
 <div class="bg-white border border-ink/15 border-t-4 border-t-amber p-8">
     <h2 class="font-display text-2xl font-bold mb-2">Processed Shipments</h2>
-    <p class="text-sm text-ink/60 mb-6 max-w-2xl leading-relaxed">
-        The loop below calls <code class="font-mono text-xs bg-ink/5 px-1">generateTrackingSummary()</code> and
-        <code class="font-mono text-xs bg-ink/5 px-1">calculateTotalCost()</code> on every object in the array,
-        regardless of subclass. PHP automatically runs each object's own overridden version &mdash;
-        this is <strong>Polymorphism</strong> in action.
-    </p>
-
     <?php if (empty($shipments)): ?>
         <div class="text-center py-16 border-2 border-dashed border-ink/15">
             <p class="text-ink/50 mb-4">No shipping objects instantiated yet.</p>
