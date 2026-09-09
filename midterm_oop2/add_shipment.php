@@ -71,7 +71,7 @@ $selType = old('shipping_type');
             </div>
         </div>
 
-        <button type="submit" class="bg-ink text-white px-5 py-2 text-sm rounded hover:bg-gray-800">
+        <button type="submit" class="bg-ink text-paper px-5 py-2.5 text-sm font-medium hover:bg-ink-700 transition-colors">
             Calculate Shipment
         </button>
     </form>
