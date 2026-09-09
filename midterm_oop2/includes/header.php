@@ -49,7 +49,7 @@ if (!isset($_SESSION['shipments']))
 
 <body class="bg-paper text-ink font-body antialiased">
     <header class="bg-ink text-paper border-b-2 border-dashed border-amber ">
-        <div class="max-w-4xl mx-auto px-6 py-5 flex flex-wrap items-center justify-between gap-4 ">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex flex-wrap items-center justify-between gap-4 ">
             <div class="flex items-center gap-3">
                 <a href="index.php">
                     <span class="font-display text-2xl">OOP-2</span>
@@ -65,5 +65,5 @@ if (!isset($_SESSION['shipments']))
             </nav>
         </div>
     </header>
-    <main class="max-w-4xl mx-auto px-6 py-10">
+    <main class="max-w-6xl mx-auto px-6 py-10">
 </body>
