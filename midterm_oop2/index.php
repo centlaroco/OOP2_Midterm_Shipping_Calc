@@ -77,35 +77,35 @@ foreach ($shipments as $s) {
         <div class="grid grid-cols-3 text-center gap-10">
             <div class="border-t-4 border-ink bg-gray-100/80 shadow-md">
                 <div class="flex justify-between items-center p-3 ">
-                    <img src="../images/no_profile.jpg" alt="martin" class="w-auto h-20 rounded-lg ">
+                    <img src="../images/no_profile.jpg" alt="martin" class="w-auto h-20 ">
                     <h2 class="text-lg text-ink">Martin Kyle Obidas</h2>
                 </div>
 
             </div>
             <div class="border-t-4 border-ink bg-gray-100/80 shadow-md">
                 <div class="flex justify-between items-center p-3 ">
-                    <img src="../images/clark.jpg" alt="clark" class="w-auto h-20 rounded-lg shadow">
+                    <img src="../images/clark.jpg" alt="clark" class="w-auto h-20">
                     <h2 class="text-lg text-ink">Clark Palad</h2>
                 </div>
             </div>
 
             <div class="border-t-4 border-ink bg-gray-100/80 shadow-md">
                 <div class="flex justify-between items-center p-3 ">
-                    <img src="../images/vincent.jpg" alt="Vincent" class="w-auto h-20 rounded-lg shadow">
-                    <h2 class="text-lg text-ink">Vincent &quot;<span class="font-bold">Vina</span>&quot; Laroco</h2>
+                    <img src="../images/vincent.jpg" alt="Vincent" class="w-auto h-20 shadow">
+                    <h2 class="text-lg text-ink">Vincent Laroco</h2>
                 </div>
             </div>
 
             <div class="border-t-4 border-ink bg-gray-100/80 shadow-md">
                 <div class="flex justify-between items-center p-3 ">
-                    <img src="../images/clint.jpg" alt="Clint" class="w-20 h-20 rounded-lg shadow">
+                    <img src="../images/clint.jpg" alt="Clint" class="w-20 h-20 ">
                     <h2 class="text-lg text-ink">Clint &quot;<span class="font-bold">Margaret</span>&quot; Goden</h2>
                 </div>
             </div>
 
             <div class="border-t-4 border-ink bg-gray-100/80 shadow-md">
                 <div class="flex justify-between items-center p-3 ">
-                    <img src="../images/billy.jpg" alt="Billy" class="w-20 h-20 rounded-lg shadow">
+                    <img src="../images/billy.jpg" alt="Billy" class="w-20 h-20 ">
                     <h2 class="text-lg text-ink">Jone &quot;<span class="font-bold">Billy</span>&quot; Ceriaca</h2>
                 </div>
             </div>
