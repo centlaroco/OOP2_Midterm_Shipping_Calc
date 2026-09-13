@@ -41,7 +41,7 @@ class ExpressShipping extends Shipping
     //overriden method 2
     public function generateTrackingSummary(): string
     {
-        return parent::generateTrackingSummary() . ' | Priority Surcharge: $' . number_format($this->expressSurcharge, 2) 
-            . ' | Insurance: $' . number_format($this->insuranceFee, 2);
+        return parent::generateTrackingSummary() . ' | Priority Surcharge: ₱' . number_format($this->expressSurcharge, 2) 
+            . ' | Insurance: ₱' . number_format($this->insuranceFee, 2);
     }
 }
