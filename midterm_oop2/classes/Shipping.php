@@ -45,6 +45,6 @@ class Shipping
     // overridden method 2
     public function generateTrackingSummary(): string
     {
-        return "Order ID: {$this->orderId} | Weight: {$this->weight} kg | Base Rate: $" . number_format($this->baseRate, 2);
+        return "Order ID: {$this->orderId} | Weight: {$this->weight} kg | Base Rate: ₱" . number_format($this->baseRate, 2);
     }
 }
