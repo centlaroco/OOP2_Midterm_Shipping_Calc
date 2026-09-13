@@ -37,7 +37,7 @@ $s = $shipments[$id];
             </div>
             <div>
                 <div class="text-xs font-semibold text-ink/50 uppercase tracking-wide">Base Rate</div>
-                <div>$<?php echo number_format($s->getBaseRate(), 2); ?> / kg</div>
+                <div>₱<?php echo number_format($s->getBaseRate(), 2); ?> / kg</div>
             </div>
 
             <?php if ($s instanceof StandardShipping): ?>
