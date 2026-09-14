@@ -18,7 +18,9 @@ if (!isset($_SESSION['shipments']))
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shipping Parcel Calculator</title>
+    <title>
+        <?php echo isset($pageTitle) ? $pageTitle : 'Shipping Parcel Calculator'; ?>
+    </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap"
@@ -52,8 +54,8 @@ if (!isset($_SESSION['shipments']))
         <div class="max-w-6xl mx-auto px-6 py-5 flex flex-wrap items-center justify-between gap-4 ">
             <div class="flex items-center gap-3">
                 <a href="index.php">
-                    <span class="font-display text-2xl">OOP-2</span>
-                    <h1 class="font-display text-sm font-normal tracking-tight">Shipping Parcel Calculator</h1>
+                    <span class="font-display text-2xl">Shipping Parcel System</span>
+                    <h1 class="font-display text-sm font-normal tracking-tight">OOP-2</h1>
                 </a>
 
             </div>
