@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 $errors = [];
 
 $type     = $_POST['shipping_type'] ?? '';
-$orderId  = trim($_POST['order_id'] ?? '');
+$orderId  = trim($_POST['order_id'] ?? '');                 
 $weight   = filter_var($_POST['weight'] ?? null, FILTER_VALIDATE_FLOAT);
 $baseRate = filter_var($_POST['base_rate'] ?? null, FILTER_VALIDATE_FLOAT);
 
@@ -23,7 +23,6 @@ $baseRate = filter_var($_POST['base_rate'] ?? null, FILTER_VALIDATE_FLOAT);
 if ($orderId === '' || !preg_match('/^[a-zA-Z0-9-]+$/', $orderId)) {
     $errors[] = 'Order ID is required and must be alphanumeric (letters, numbers, dashes only).';
 }
-
 if ($weight === false || $weight <= 0 || $weight > 1000) {
     $errors[] = 'Weight must be a positive number up to 1000 kg.';
 }
@@ -54,7 +53,8 @@ $taxRate   = $_POST['tax_rate'] ?? '';
 if ($type === 'Express' && $surcharge !== '' && (!is_numeric($surcharge) || (float) $surcharge < 0)) {
     $errors[] = 'Express Surcharge must be zero or a positive number.';
 }
-else if ($type === 'International') {
+
+if ($type === 'International') {
     if ($country === '') {
         $errors[] = 'Destination Country is required for International Shipping.';
     }
@@ -64,7 +64,7 @@ else if ($type === 'International') {
 }
 
 //return to form with errors if naa
-else if (!empty($errors)) {
+if (!empty($errors)) {
     $_SESSION['form_errors'] = $errors;
     $_SESSION['old_input']   = $_POST;
     header('Location: add_shipment.php');
