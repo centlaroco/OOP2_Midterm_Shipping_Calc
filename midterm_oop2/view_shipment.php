@@ -1,10 +1,10 @@
 <?php
 require_once __DIR__ . '/includes/header.php';
-
 $shipments = $_SESSION['shipments'];
 $id = isset($_GET['id']) ? (int) $_GET['id'] : -1;
 
 if (!isset($shipments[$id])) {
+    
     echo '<div class="bg-white border border-ink/15 border-t-4 border-t-warn p-8">
             <div class="border-l-4 border-warn bg-red-50 text-warn px-5 py-3 mb-6 text-sm">Shipment not found.</div>
             <a href="shipments.php" class="border border-ink text-ink px-5 py-2.5 text-sm font-medium hover:bg-ink hover:text-paper transition-colors">Back to Shipments</a>
@@ -48,11 +48,11 @@ $s = $shipments[$id];
             <?php elseif ($s instanceof ExpressShipping): ?>
                 <div>
                     <div class="text-xs font-semibold text-ink/50 uppercase tracking-wide">Priority Surcharge</div>
-                    <div>$<?php echo number_format($s->getExpressSurcharge(), 2); ?></div>
+                    <div>₱<?php echo number_format($s->getExpressSurcharge(), 2); ?></div>
                 </div>
                 <div>
                     <div class="text-xs font-semibold text-ink/50 uppercase tracking-wide">Insurance Fee</div>
-                    <div>$<?php echo number_format($s->getInsuranceFee(), 2); ?></div>
+                    <div>₱<?php echo number_format($s->getInsuranceFee(), 2); ?></div>
                 </div>
             <?php elseif ($s instanceof InternationalShipping): ?>
                 <div>
