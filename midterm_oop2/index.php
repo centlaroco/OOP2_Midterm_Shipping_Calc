@@ -12,7 +12,7 @@ foreach ($shipments as $s) {
 ?>
 <div class="grid grid-cols-1 space-y-6">
     <div class="bg-white border border-ink/15 border-t-4 border-t-amber p-8 ">
-        <h2 class="font-display text-2xl font-bold mb-3">Welcome to the Global Parcel Calculator</h2>
+        <h2 class="font-display text-2xl font-bold mb-3">Welcome to the Shipping Parcel Calculator</h2>
         <div class="grid sm:grid-cols-3 gap-4 mt-8">
             <div class="border-l-4 border-amber bg-amber-50/60 px-5 py-4">
                 <div class="font-display text-3xl font-bold"><?php echo $count; ?></div>
@@ -68,46 +68,6 @@ foreach ($shipments as $s) {
                 <h3 class="font-display font-bold mb-1">International Shipping</h3>
                 <p class="text-sm text-ink/70 leading-relaxed">Adds a customs tax percentage based on the destination
                     country.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="bg-white border border-ink/15 p-8">
-        <h1 class="font-display text-xl font-bold pb-5 ">Members</h1>
-        <div class="grid grid-cols-3 text-center gap-10">
-            <div class="border-t-4 border-ink bg-gray-100/80 shadow-md">
-                <div class="flex justify-between items-center p-3 ">
-                    <img src="../images/no_profile.jpg" alt="martin" class="w-auto h-20 ">
-                    <h2 class="text-lg text-ink">Martin Kyle Obidas</h2>
-                </div>
-
-            </div>
-            <div class="border-t-4 border-ink bg-gray-100/80 shadow-md">
-                <div class="flex justify-between items-center p-3 ">
-                    <img src="../images/clark.jpg" alt="clark" class="w-auto h-20">
-                    <h2 class="text-lg text-ink">Clark Palad</h2>
-                </div>
-            </div>
-
-            <div class="border-t-4 border-ink bg-gray-100/80 shadow-md">
-                <div class="flex justify-between items-center p-3 ">
-                    <img src="../images/vincent.jpg" alt="Vincent" class="w-auto h-20 shadow">
-                    <h2 class="text-lg text-ink">Vincent Laroco</h2>
-                </div>
-            </div>
-
-            <div class="border-t-4 border-ink bg-gray-100/80 shadow-md">
-                <div class="flex justify-between items-center p-3 ">
-                    <img src="../images/clint.jpg" alt="Clint" class="w-20 h-20 ">
-                    <h2 class="text-lg text-ink">Clint &quot;<span class="font-bold">Margaret</span>&quot; Goden</h2>
-                </div>
-            </div>
-
-            <div class="border-t-4 border-ink bg-gray-100/80 shadow-md">
-                <div class="flex justify-between items-center p-3 ">
-                    <img src="../images/billy.jpg" alt="Billy" class="w-20 h-20 ">
-                    <h2 class="text-lg text-ink">Jone &quot;<span class="font-bold">Billy</span>&quot; Ceriaca</h2>
-                </div>
             </div>
         </div>
     </div>
