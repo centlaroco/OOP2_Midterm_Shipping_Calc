@@ -54,7 +54,7 @@ if (!isset($_SESSION['shipments']))
         <div class="max-w-6xl mx-auto px-6 py-5 flex flex-wrap items-center justify-between gap-4 ">
             <div class="flex items-center gap-3">
                 <a href="index.php">
-                    <span class="font-display text-2xl">Shipping Parcel System</span>
+                    <span class="font-display text-2xl">ParcelFlow System</span>
                     <h1 class="font-display text-sm font-normal tracking-tight">OOP-2</h1>
                 </a>
 
