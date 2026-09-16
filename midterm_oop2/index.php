@@ -12,7 +12,7 @@ foreach ($shipments as $s) {
 ?>
 <div class="grid grid-cols-1 space-y-6">
     <div class="bg-white border border-ink/15 border-t-4 border-t-amber p-8 ">
-        <h2 class="font-display text-2xl font-bold mb-3">Welcome to the Shipping Parcel Calculator</h2>
+        <h2 class="font-display text-2xl font-bold mb-3">Welcome to the ParcelFlow System</h2>
         <div class="grid sm:grid-cols-3 gap-4 mt-8">
             <div class="border-l-4 border-amber bg-amber-50/60 px-5 py-4">
                 <div class="font-display text-3xl font-bold"><?php echo $count; ?></div>
